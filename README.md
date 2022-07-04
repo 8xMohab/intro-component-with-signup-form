@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/8xMohab/intro-component-with-signup-form-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/8xMohab/intro-component-with-signup-form)
+- Live Site URL: [Add live site URL here](https://8xmohab.github.io/intro-component-with-signup-form/)
 
 ## My process
 
@@ -58,17 +58,14 @@ I learned how to make form validation, style the input and its attributes
   <input type="text" name="firstName" placeholder="First Name" />
 </div>
 
-```js for (let i = 1; i < 5; i++) { if ($(`form div:nth-child(${i})
-input`).val() == "") { $(`form div:nth-child(${i})`).addClass("data-error");
-$(`form div:nth-child(${i}) input`).removeAttr("placeholder"); isError = true; }
-}
+
 ````
 
 ### Useful resources
 
-- [W3schools](https://www.w3schools.com/) - This helped me for syntax and documentation of elements
+- [W3schools](https://www.w3schools.com/) - This helped me for the syntax and documentation of elements
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/8xMohab)
 - Twitter - [@8xMohab](https://twitter.com/8xMohab)
