@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/8xMohab/intro-component-with-signup-form)
-- Live Site URL: [Add live site URL here](https://8xmohab.github.io/intro-component-with-signup-form/)
+- Solution URL: [Git Repo](https://github.com/8xMohab/intro-component-with-signup-form)
+- Live Site URL: [Live on git pages](https://8xmohab.github.io/intro-component-with-signup-form/)
 
 ## My process
 
@@ -67,5 +67,5 @@ I learned how to make form validation, style the input and its attributes
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/8xMohab)
+- Frontend Mentor - [@8xMohab](https://www.frontendmentor.io/profile/8xMohab)
 - Twitter - [@8xMohab](https://twitter.com/8xMohab)
