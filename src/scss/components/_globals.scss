@@ -6,17 +6,68 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.3;
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
 }
-
+// custom components
+.break-line::after {
+  content: "\a";
+  white-space: pre;
+}
+// required / data error class
+.data-error {
+  position: relative;
+}
+.data-error {
+  input {
+    border: solid 2px $PrimaryRed !important;
+    margin-bottom: 25px !important;
+  }
+}
+.data-error::before {
+  content: url("../../assets/icon-error.svg");
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  top: 18%;
+}
+.data-error::after {
+  content: attr(err-msg);
+  position: absolute;
+  color: $PrimaryRed;
+  z-index: 1;
+  right: 0%;
+  top: 68%;
+  font-style: italic;
+  font-size: 12px;
+}
+.data-error input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $PrimaryRed;
+  opacity: 1;
+}
+.data-error input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $PrimaryRed;
+}
+.data-error input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $PrimaryRed;
+}
 // Visibility
 .hide-mobile {
   // hide content in mobile devices

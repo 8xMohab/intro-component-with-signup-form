@@ -1,3 +1,109 @@
-@import 'components/mixins';
-@import 'components/variables';
-@import 'components/globals';
+@import "components/mixins";
+@import "components/variables";
+@import "components/globals";
+body {
+  background-color: $PrimaryRed;
+  color: white;
+  background-image: url("../../assets/bg-intro-mobile.png");
+  background-size: cover;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 45px;
+  h1 {
+    font-weight: 700;
+    margin: 0;
+  }
+  p {
+    margin-top: 15px;
+  }
+}
+.offer {
+  margin-top: 30px;
+  text-align: center;
+  background-color: $AccentBlue;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.18);
+  form {
+    width: 100%;
+    input {
+      margin-bottom: 15px;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      border: solid 1px $FadedText;
+      font-weight: 600;
+      position: relative;
+    }
+  }
+  button {
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    background-color: $PrimaryGreen;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.13) inset;
+    -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.13) inset;
+    -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.13) inset;
+  }
+  p {
+    color: $FadedText;
+    font-size: 12px;
+  }
+}
+footer {
+  margin-top: 20px;
+  display: flex;
+  color: black;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+  p {
+    margin: auto;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    height: 100vh;
+    .text-box,
+    .offer {
+      margin-top: 0;
+    }
+    .text-box {
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+}
